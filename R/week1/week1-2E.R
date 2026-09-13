@@ -22,12 +22,12 @@ attach(data.prac) # 이건 데이터 내부의 변수(Age, Price..등을 그냥 
 
 v1=which((120<Age)&(150>Age))
 v2=which((1000>Price)|(2000<Price))
-save(data.prac,file="C:/Users/nnk90/OneDrive/문서/GitHub/data-analysis-study/R/Auction.RData")
-write.table(data.prac,file="C:/Users/nnk90/OneDrive/문서/GitHub/data-analysis-study/R/Auction1.txt")
-write.table(data.prac,file="C:/Users/nnk90/OneDrive/문서/GitHub/data-analysis-study/R/Auction2.txt",sep=",")
+save(data.prac,file="Auction.RData")
+write.table(data.prac,file="Auction1.txt")
+write.table(data.prac,file="Auction2.txt",sep=",")
 
 install.packages("MASS") #패키지 설치
 library(MASS) # MASS 라이브러리 임포트
 
-write.matrix(data.prac,file="C:/Users/nnk90/OneDrive/문서/GitHub/data-analysis-study/R/Auction3.txt")
-write.csv(data.prac,file="C:/Users/nnk90/OneDrive/문서/GitHub/data-analysis-study/R/Auction4.csv")
+write.matrix(data.prac,file="Auction3.txt")
+write.csv(data.prac,file="Auction4.csv")
